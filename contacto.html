@@ -15,7 +15,8 @@
     <meta property="og:description" content="Curriculum Vitae de Tracy Brown" />
     <link href="https://fonts.googleapis.com/css2?family=Assistant&display=swap"
      rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      crossorigin="anonymous"/>
 </head>
 
 <body>
@@ -47,22 +48,55 @@
     </nav>
     
     <div class="form-cont">
-        <span class="titu-cont">Agendemos una entrevista</span>
-        <form action="" method="get">
-          <label for="empresa">Empresa:</label>
-          <input type="text" name= "empresa" required="">
-          <label for="pais">Pais:</label>
-          <input type="text" name= "pais" required="">
-          <label for="nombre">Nombre:</label>
-          <input type="text" name= "nombre" required="">
-          <label for="apellido">Apellido:</label>
-          <input type="text" name= "apellido" required="">
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required=""><span id="emailOK"></span>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
+        
+      <form id="form" action="" method="get">
+          <div class="titu-cont">Contacto</div>
+          
+          <label for="nombre">Nombre</label>
+            <i class="fas fa-user"></i>
+            <input type="text" name="nombre" id="nombre" placeholder="Escriba su nombre" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        
+    
+          <label for="apellido">Apellido</label>
+            <i class="fas fa-user"></i>
+            <input type="text" name="apellido" id="apellido" placeholder="Escriba su apellido" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+     
+
+          <label for="empresa">Empresa</label>
+            <i class="fas fa-building"></i>
+            <input type="text" name="empresa" id="empresa" placeholder="Nombre de la empresa" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        
+
+          <label for="pais">Pais</label>
+            <i class="fas fa-flag"></i>
+            <input type="text" name="pais" id="pais" placeholder="Pais donde se encuentra" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
       
+
+        
+          <label for="email">Email</label>
+            <i class="far fa-envelope"></i>
+            <input type="email" name="email" id="email" placeholder="abc@ejemplo.com" />
+            <i class="fas fa-exclamation-circle failure-icon"></i>
+            <i class="far fa-check-circle success-icon"></i>
+            <div class="error"></div>
+        
+    
+    
+        <button type="submit" id="submit">Submit</button>
+      </form>
+    </div>
       
       <footer>
         <nav class="nav_vol">
